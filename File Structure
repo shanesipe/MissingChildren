@@ -1,0 +1,53 @@
+/my_app
+  /client                       # React frontend
+    /public
+      /images
+      /index.html
+    /src
+      /components               # Reusable React components
+        /Common
+        /Public
+        /LawEnforcement
+      /screens                  # React components for full screens
+        /Public
+          /Dashboard.js
+          /Profile.js
+        /LawEnforcement
+          /Dashboard.js
+          /CaseManagement.js
+      /services                 # Services for API interaction
+        /api.js
+      /App.js                   # Main React component
+      /index.js                 # Entry point for React
+    /package.json              # NPM dependencies and scripts
+    /README.md
+
+  /server                       # Node.js backend
+    /config                     # Configuration files for server
+      /dbConfig.js              # Database configuration
+    /controllers                # Business logic handlers for API routes
+      /publicController.js
+      /lawEnforcementController.js
+    /routes                     # API route definitions
+      /publicRoutes.js
+      /lawEnforcementRoutes.js
+    /models                     # Database models
+      /userModel.js
+      /caseModel.js
+    /middlewares                # Middlewares for auth and logging
+      /authMiddleware.js
+    /utils                      # Utility functions
+    /server.js                  # Entry point for the backend server
+    /package.json               # NPM dependencies and scripts
+    /README.md
+
+  /database                     # Database-specific scripts
+    /migrations                 # Database migration files
+    /seeds                      # Seed data for initial database setup
+
+  /docs                         # Documentation for the project
+    /API_Documentation.md
+    /Project_Overview.md
+
+  /.gitignore                   # Specifies intentionally untracked files to ignore
+  /README.md                    # General information about the project
